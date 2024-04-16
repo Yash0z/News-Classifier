@@ -4,16 +4,14 @@ export const About = () => {
 	return (
 		<>
 			<Navbar />
-			<section className='p-10 border-white  w-[90%] m-auto  '>
-				<div
-					className='pb-10 text-sky  text-4xl text-center font-PlayfairDisplay
-         md:text-4xl'
-				>
-					Research Paper
-				</div>
+			<div className='p-10 font-PlayfairDisplay text-4xl text-sky pb-10 sticky  top-0 bg-black text-center'>
+				Research Paper
+			</div>
 
+			<div className=' relative p-5 border-white h-[78vh]  w-[80%]  mx-auto  overflow-hidden hover:overflow-y-scroll transition-overflow '>
 				{/* Problem */}
-				<div className='text-white font-OpenSans text-xl text-clip  mb-10 '>
+
+				<p className='text-white font-OpenSans text-xl text-clip  mb-10  '>
 					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
 						INTRODUCTION
 					</h1>
@@ -40,9 +38,9 @@ export const About = () => {
 					detect the accuracy. As the fake news is increasing day by day
 					the people are not believing even if the news is real and this
 					drifts the thoughts of the common people from the real issue.
-				</div>
+				</p>
 				{/*Proposed Solution*/}
-				<div className='text-white font-OpenSans text-xl text-clip mb-10 '>
+				<p className='text-white font-OpenSans text-xl text-clip mb-10 '>
 					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
 						PROPOSED SOLUTION
 					</h1>
@@ -63,9 +61,9 @@ export const About = () => {
 					accuracy of only important words are matched and detected from
 					the dataset, this saves the time to detect the accuracy of the
 					news.
-				</div>
+				</p>
 				{/* System Architecture */}
-				<div className='text-white font-OpenSans text-xl text-clip mb-10  '>
+				<p className='text-white font-OpenSans text-xl text-clip mb-10  '>
 					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
 						SYSTEM ARCHITECTURE
 					</h1>
@@ -94,9 +92,9 @@ export const About = () => {
 					percentage value is calculated and in this way the accuracy of
 					the fake news is determined. Therefore, in this way it is
 					determined whether a given news is fake or real.
-				</div>
+				</p>
 				{/* Conclusion */}
-				<div className='text-white font-OpenSans text-xl text-clip mb-10 '>
+				<p className='text-white font-OpenSans text-xl text-clip mb-10 '>
 					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
 						CONCLUSION
 					</h1>
@@ -120,9 +118,9 @@ export const About = () => {
 					between authentic and fake news articles ensures that users can
 					navigate the ever-expanding landscape of media with clarity and
 					assurance.
-				</div>
+				</p>
 				{/* references */}
-				<div className='text-white font-OpenSans text-xl text-clip  '>
+				<p className='text-white font-OpenSans text-xl text-clip  '>
 					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
 						REFERENCES
 					</h1>
@@ -156,8 +154,8 @@ export const About = () => {
 					Zhiwei Jin, Juan Cao, Qi Tian, Y. Zhang “Novel Visual and
 					Statistical Image Features for Microblogs News Verification,”
 					2017 IEEE, Volume: 19, Issue: 3.
-				</div>
-			</section>
+				</p>
+			</div>
 		</>
 	);
 };
