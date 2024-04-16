@@ -79,7 +79,7 @@ export const Navbar = () => {
 							Research
 						</li>
 					</NavLink>
-					<a href='https://github.com/'>
+					<a href='https://github.com/YashAmberkar05/News-Classifier'>
 						<li className='hidden md:block cursor-pointer'>
 							<FontAwesomeIcon
 								icon={faGithub}
