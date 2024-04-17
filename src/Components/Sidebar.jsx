@@ -69,8 +69,8 @@ export default function Sidebar() {
 				</li> 
 				{[
 					{ text: "Home", link: "/", icon: faHouse },
-					{ text: "Login", link: "/login", icon: faArrowRightToBracket },
-					{ text: "Research", link: "/research", icon: faBook },
+					{ text: "Login", link: "/Login", icon: faArrowRightToBracket },
+					{ text: "Research", link: "/About", icon: faBook },
 					{ text: "History", link: "/history", icon: faClockRotateLeft },
 					{ text: "Contact", link: "/contact", icon: faEnvelope },
 					{ text: "Privacy", link: "/privacy", icon: faFileLines },
