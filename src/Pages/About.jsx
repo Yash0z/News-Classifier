@@ -10,11 +10,10 @@ export const About = () => {
 
 			<div className=' relative p-5 border-white h-[78vh]  w-[80%]  mx-auto  overflow-hidden hover:overflow-y-scroll transition-overflow '>
 				{/* Problem */}
-
+				<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
+					INTRODUCTION
+				</h1>
 				<p className='text-white font-OpenSans text-xl text-clip  mb-10  '>
-					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
-						INTRODUCTION
-					</h1>
 					The news information can be easily accessed through Internet and
 					social media. It is convenient for user to follow their interest
 					events available in online mode. Mass-media playing a huge role
@@ -40,10 +39,10 @@ export const About = () => {
 					drifts the thoughts of the common people from the real issue.
 				</p>
 				{/*Proposed Solution*/}
+				<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
+					PROPOSED SOLUTION
+				</h1>
 				<p className='text-white font-OpenSans text-xl text-clip mb-10 '>
-					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
-						PROPOSED SOLUTION
-					</h1>
 					The proposed system uses naïve Bayes algorithm for detecting the
 					fake news, it has a higher accuracy level. The data is divided
 					here into two parts (test and train). The train data is trained
@@ -63,10 +62,10 @@ export const About = () => {
 					news.
 				</p>
 				{/* System Architecture */}
+				<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
+					SYSTEM ARCHITECTURE
+				</h1>
 				<p className='text-white font-OpenSans text-xl text-clip mb-10  '>
-					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
-						SYSTEM ARCHITECTURE
-					</h1>
 					The first step in the detection of fake news is extracting the
 					training data either by downloading it from a file or from
 					online. There are two methods to count the words. The Fit method
@@ -94,10 +93,10 @@ export const About = () => {
 					determined whether a given news is fake or real.
 				</p>
 				{/* Conclusion */}
+				<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
+					CONCLUSION
+				</h1>
 				<p className='text-white font-OpenSans text-xl text-clip mb-10 '>
-					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
-						CONCLUSION
-					</h1>
 					By leveraging the Naïve Bayes theorem, we unlock a powerful
 					mechanism to swiftly classify news articles as either authentic
 					or fabricated, regardless of dataset size. This methodology
@@ -120,10 +119,10 @@ export const About = () => {
 					assurance.
 				</p>
 				{/* references */}
+				<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
+					REFERENCES
+				</h1>
 				<p className='text-white font-OpenSans text-xl text-clip  '>
-					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
-						REFERENCES
-					</h1>
 					[1] Marco L, E. Tacchini, S. Moret, G. Ballarin, “Automatic
 					Online Fake News Detection Combining Content and Social Signals,”
 					[Online]. Available:
