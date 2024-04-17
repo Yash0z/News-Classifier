@@ -1,4 +1,5 @@
 import React from "react";
+import {Switch } from "./Switch"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import Sidebar from "./Sidebar";
@@ -31,39 +32,42 @@ library.add(
 export const Navbar = () => {
 	return (
 		<>
-			<div className='p-4  sticky top-0 bg-black flex justify-between items-center text-lavender border-b border-b-lavender font-Raleway font-bold'>
-				<ul className='flex justify-between w-20 space-x-2 relative items-center '>
-					<li className=''></li>
+			<div className='p-4  sticky top-0 bg-black h-[8vh] flex justify-between items-center text-lavender border-b border-b-lavender font-Raleway font-bold'>
+				<ul className='flex justify-between w-20 space-x-2 relative items-center '>   
 					<Sidebar />
 					<li className=' pb-1 text-2xl font-Montserrat font-bold '>
 						VerifEye
 					</li>
+               
 				</ul>
+            
 
-				<ul className='flex justify-between items-center space-x-5'>
+
+				<ul className='flex justify-between items-center space-x-6 pr-3'>
+               
 					<NavLink
 						to='/'
 						className={(e) => {
 							return e.isActive ? "transition-colors text-sky " : "";
 						}}
 					>
-						<li className='hidden md:block cursor-pointer'>
+						<li className='hidden md:block cursor-pointer text-xl'>
 							<FontAwesomeIcon
 								icon={faHouse}
-								className='size-4 pr-1.5'
+								className='size-5 pr-1.5'
 							/>
 							Home
 						</li> 
 					</NavLink>
-					<NavLink to='/login'>
-						<li className='hidden md:block cursor-pointer'>
+					<a href='https://github.com/YashAmberkar05/News-Classifier'>
+						<li className='hidden md:block cursor-pointer text-xl'>
 							<FontAwesomeIcon
-								icon={faArrowRightToBracket}
-								className='size-4 pr-1.5'
+								icon={faGithub}
+								className='size-5 pr-1.5'
 							/>
-							Login
+							Github
 						</li>
-					</NavLink>
+					</a>
 
 					<NavLink
 						to='/about'
@@ -71,23 +75,24 @@ export const Navbar = () => {
 							return e.isActive ? "text-sky" : "";
 						}}
 					>
-						<li className='hidden md:block cursor-pointer'>
+						<li className='hidden md:block cursor-pointer text-xl'>
 							<FontAwesomeIcon
 								icon={faFileLines}
-								className='size-4 pr-1'
+								className='size-5 pr-1'
 							/>
 							Research
 						</li>
 					</NavLink>
-					<a href='https://github.com/YashAmberkar05/News-Classifier'>
-						<li className='hidden md:block cursor-pointer'>
+					<NavLink to='/login'>
+						<li className='hidden md:block cursor-pointer text-xl'>
 							<FontAwesomeIcon
-								icon={faGithub}
-								className='size-4 pr-1.5'
+								icon={faArrowRightToBracket}
+								className='size-5 pr-1.5'
 							/>
-							Github
+							Login
 						</li>
-					</a>
+					</NavLink>
+               <Switch/>
 				</ul>
 			</div>
 		</>
