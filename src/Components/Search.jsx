@@ -38,10 +38,10 @@ export const Search = () => {
 			{/* Text Section */}
 			<div className='flex justify-center relative top-[10vh]'>
 				<ul className='flex flex-col items-center space-x-4 md:flex-row '>
-					<li className='font-PlayfairDisplay text-silver text-3xl font-bold sm:text-4xl md:text-5xl '>
+					<li className='font-PlayfairDisplay text-silver text-3xl font-bold sm:text-5xl  '>
 						Navigate the Noise,
 					</li>
-					<li className='font-PlayfairDisplay text-cerulean text-3xl font-bold sm:text-4xl md:text-5xl'>
+					<li className='font-PlayfairDisplay text-cerulean text-3xl font-bold sm:text-5xl '>
 						Find the Facts.
 					</li>
 				</ul>
@@ -57,7 +57,7 @@ export const Search = () => {
 					<label className='flex flex-row justify-between '>
 						<input
 							required
-							className='w-[80vw]  relative  min-h-[4rem] rounded-lg text-white pl-5 bg-black cursor-text outline-none border-2 duration-200 peer focus: border-gray-500 focus:border-lavender md:w-[60vw] '
+							className='w-[80vw]  relative  min-h-[5rem] rounded-lg text-white pl-5 bg-black cursor-text outline-none border-2 duration-200 peer focus: border-gray-500 focus:border-lavender overflow-hidden  md:w-[60vw] '
 							type='text'
 							value={inputText}
 							onChange={(e) => {
@@ -71,15 +71,15 @@ export const Search = () => {
 							}}
 						/>
 						<span
-							className='text-sm text-gray-400 absolute  top-6 ml-6 peer-focus:text-lavender  pointer-events-none 
+							className='text-xl text-gray-400 absolute px-2  top-6 ml-6 peer-focus:text-lavender  pointer-events-none 
                      duration-300  bg-black 
-                     peer-focus:-translate-y-8 peer-focus:text-sm  
-                     peer-valid:-translate-y-8 peer-valid:text-sm  
-                     md:text-lg md:top-5 md:peer-focus:-translate-y-7 md:peer-valid:-translate-y-7 md:peer-focus:text-md md:peer-valid:text-md '
+                     peer-focus:-translate-y-9 peer-focus:text-xl  
+                     peer-valid:-translate-y-9 peer-valid:text-xl 
+                     sm:text-2xl md:top-5 md:peer-focus:-translate-y-8 md:peer-valid:-translate-y-8 md:peer-focus:text-md md:peer-valid:text-md '
 						>
 							Enter your content
 						</span>
-					</label>
+					</label> 
 					<button
 						type='submit'
 						className='text-center font-Poppins text-xl p-2 w-40 h-12  bg-red rounded-lg border-2 border-black hover:bg-opacity-70  duration-500'
