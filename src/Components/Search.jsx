@@ -39,10 +39,10 @@ export const Search = () => {
 			{/* Text Section */}
 			<div className='flex justify-center relative top-[10vh]'>
 				<ul className='flex flex-col items-center space-x-4 md:flex-row '>
-					<li className='font-PlayfairDisplay text-silver text-3xl font-bold sm:text-5xl  '>
+					<li className='font-PlayfairDisplay text-silver text-4xl font-bold sm:text-5xl  '>
 						Navigate the Noise,
 					</li>
-					<li className='font-PlayfairDisplay text-cerulean text-3xl font-bold sm:text-5xl '>
+					<li className='font-PlayfairDisplay text-cerulean text-4xl font-bold sm:text-5xl '>
 						Find the Facts.
 					</li>
 				</ul>
@@ -119,9 +119,14 @@ export const Search = () => {
 					)}
 				</div>
 			</section>
-         <NavLink to='/contact'className="text-sky font-raleway text-lg absolute  bottom-4 right-4  hover:text-blue-500 hover:underline" > 
+        <div className="hidden md:block">
+         <NavLink to='/contact'className="text-sky font-raleway text-lg absolute  bottom-4 right-8 hover:text-blue-500 hover:underline" > 
               Contact
             </NavLink>
+            <NavLink to='/terms&Conditions'className="text-sky font-raleway text-lg absolute  bottom-4 right-28  hover:text-blue-500 hover:underline" > 
+              Terms And Conditions
+            </NavLink>
+            </div>
 		</>
 	);
 };
