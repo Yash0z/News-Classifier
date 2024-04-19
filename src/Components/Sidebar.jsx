@@ -72,7 +72,7 @@ export default function Sidebar() {
 					{ text: "Login", link: "/Login", icon: faArrowRightToBracket },
 					{ text: "Research", link: "/About", icon: faBook },
 					{ text: "History", link: "/history", icon: faClockRotateLeft },
-					{ text: "Contact", link: "/contact", icon: faEnvelope },
+					{ text: "Contact", link: "/Contact", icon: faEnvelope },
 					{ text: "Privacy", link: "/privacy", icon: faFileLines },
 					{
 						text: "Terms & Conditions",
