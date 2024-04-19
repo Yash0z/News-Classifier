@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -118,6 +119,9 @@ export const Search = () => {
 					)}
 				</div>
 			</section>
+         <NavLink to='/contact'className="text-sky font-raleway text-lg absolute  bottom-4 right-4  hover:text-blue-500 hover:underline" > 
+              Contact
+            </NavLink>
 		</>
 	);
 };
