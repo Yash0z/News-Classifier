@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar";
 import { NavLink } from "react-router-dom";
 import {
 	faHouse,
-	faArrowRightToBracket,
+   faClockRotateLeft,
 	faMagnifyingGlass,
 	faBarsStaggered,
 	faNewspaper,
@@ -16,7 +16,7 @@ import {
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 library.add(
-	faArrowRightToBracket,
+   faClockRotateLeft,
 	faEnvelope,
 	faHouse,
 	faMagnifyingGlass,
@@ -53,6 +53,20 @@ export const Navbar = () => {
 								className='size-4 pr-1.5'
 							/>
 							Home
+						</li> 
+					</NavLink>
+               <NavLink
+						to='/history'
+						className={(e) => {
+							return e.isActive ? "transition-colors text-sky " : "";
+						}}
+					>
+						<li className='hidden md:block cursor-pointer'>
+							<FontAwesomeIcon
+								icon={faClockRotateLeft}
+								className='size-4 pr-1.5'
+							/>
+							History
 						</li> 
 					</NavLink>
 					<NavLink
