@@ -32,10 +32,10 @@ library.add(
 export const Navbar = () => {
 	return (
 		<>
-			<div className='p-4  sticky top-0 bg-black h-[8vh] flex justify-between items-center text-lavender border-b border-b-lavender font-Raleway font-bold'>
+			<div className='p-4  sticky top-0 bg-primary h-[8vh] flex justify-between items-center text-accent-1 border-b  border-b-accent-1 font-Raleway font-bold'>
 				<ul className='flex justify-between w-20 space-x-2 relative items-center '>   
 					<Sidebar />
-					<li className=' pb-1 text-2xl font-Montserrat font-bold '>
+					<li className=' pb-1 text-4xl font-Montserrat font-bold '>
 						VerifEye
 					</li>
                
@@ -48,7 +48,8 @@ export const Navbar = () => {
 					<NavLink
 						to='/'
 						className={(e) => {
-							return e.isActive ? "transition-colors text-sky " : "";
+							return e.isActive ? "text-active" : "";
+
 						}}
 					>
 						<li className='hidden md:block cursor-pointer text-xl'>
@@ -72,7 +73,7 @@ export const Navbar = () => {
 					<NavLink
 						to='/about'
 						className={(e) => {
-							return e.isActive ? "text-sky" : "";
+							return e.isActive ? "text-active" : "";
 						}}
 					>
 						<li className='hidden md:block cursor-pointer text-xl'>
