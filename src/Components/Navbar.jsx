@@ -55,16 +55,6 @@ export const Navbar = () => {
 							Home
 						</li> 
 					</NavLink>
-					<NavLink to='/login'>
-						<li className='hidden md:block cursor-pointer'>
-							<FontAwesomeIcon
-								icon={faArrowRightToBracket}
-								className='size-4 pr-1.5'
-							/>
-							Login
-						</li>
-					</NavLink>
-
 					<NavLink
 						to='/about'
 						className={(e) => {
