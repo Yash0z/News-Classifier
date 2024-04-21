@@ -28,18 +28,21 @@ body {
  
 
  .light {
-   --background: 255, 251, 245;
+   --background: 240, 235, 227;
    --primary: 247, 239, 229;
    --secondary: 195, 172, 208;
    --accent-1: 119, 67, 219;
    --accent-2: 246, 255, 166;
-   --active: 203, 255, 169;
+   --accent-3: 63, 114, 175;
+   --active: 79, 69, 87 ;
  }
+
  .dark {
    --background: 34, 40, 49;
    --primary: 49, 54, 63;
    --secondary: 238, 238, 238;
    --accent-1: 118, 171, 174;
    --accent-2: 221, 87, 70;
+   --accent-3: 219, 226, 239;
    --active: 76, 0, 112;
 }
