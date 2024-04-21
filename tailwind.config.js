@@ -30,10 +30,14 @@ export default {
             'reddishpurple': '#A0153E',
             'sky': '#C0D6E8',
             primary: 'rgba(var(--primary))',
+            "text-clr": 'rgba(var(--text-clr))',
+            background: 'rgba(var(--background))',
             secondary: 'rgba(var(--secondary))',
             "accent-1": 'rgba(var(--accent-1))',
             "accent-2": 'rgba(var(--accent-2))',
+            "accent-3": 'rgba(var(--accent-3))',
             active: 'rgba(var(--active))',
+            filled: 'rgba(var(--filled))',
 
          },
 

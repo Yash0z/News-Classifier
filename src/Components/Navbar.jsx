@@ -35,7 +35,7 @@ export const Navbar = () => {
 			<div className='p-4  sticky top-0 bg-primary h-[8vh] flex justify-between items-center text-accent-1 border-b  border-b-accent-1 font-Raleway font-bold'>
 				<ul className='flex justify-between w-20 space-x-2 relative items-center '>   
 					<Sidebar />
-					<li className=' pb-1 text-4xl font-Montserrat font-bold '>
+					<li className=' pb-1 text-3xl font-Montserrat font-bold '>
 						VerifEye
 					</li>
                
