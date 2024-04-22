@@ -4,15 +4,15 @@ export const About = () => {
 	return (
 		<>
 			<Navbar />
-			<div className='p-10 font-PlayfairDisplay text-4xl text-sky pb-10 sticky  top-0 bg-black text-center'>
+			<div className='p-10 font-PlayfairDisplay text-4xl text-accent-1 pb-10 sticky  top-0 bg-background text-center'>
 				Research Paper
 			</div>
 
 			<div className=' relative p-5 border-white h-[78vh]  w-[80%]  mx-auto  overflow-hidden hover:overflow-y-scroll transition-overflow '>
 				{/* Problem */}
 
-				<p className='text-white font-OpenSans text-xl text-clip  mb-10  '>
-					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
+				<p className='text-text-clr font-OpenSans text-xl text-clip  mb-10  '>
+					<h1 className='pb-2 font-Questrial text-4xl text-accent-3 '>
 						INTRODUCTION
 					</h1>
 					The news information can be easily accessed through Internet and
@@ -40,8 +40,8 @@ export const About = () => {
 					drifts the thoughts of the common people from the real issue.
 				</p>
 				{/*Proposed Solution*/}
-				<p className='text-white font-OpenSans text-xl text-clip mb-10 '>
-					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
+				<p className='text-text-clr font-OpenSans text-xl text-clip mb-10 '>
+					<h1 className='pb-2 font-Questrial text-4xl text-accent-3 '>
 						PROPOSED SOLUTION
 					</h1>
 					The proposed system uses naïve Bayes algorithm for detecting the
@@ -63,8 +63,8 @@ export const About = () => {
 					news.
 				</p>
 				{/* System Architecture */}
-				<p className='text-white font-OpenSans text-xl text-clip mb-10  '>
-					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
+				<p className='text-text-clr font-OpenSans text-xl text-clip mb-10  '>
+					<h1 className='pb-2 font-Questrial text-4xl text-accent-3 '>
 						SYSTEM ARCHITECTURE
 					</h1>
 					The first step in the detection of fake news is extracting the
@@ -94,8 +94,8 @@ export const About = () => {
 					determined whether a given news is fake or real.
 				</p>
 				{/* Conclusion */}
-				<p className='text-white font-OpenSans text-xl text-clip mb-10 '>
-					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
+				<p className='text-text-clr font-OpenSans text-xl text-clip mb-10 '>
+					<h1 className='pb-2 font-Questrial text-4xl text-accent-3 '>
 						CONCLUSION
 					</h1>
 					By leveraging the Naïve Bayes theorem, we unlock a powerful
@@ -120,8 +120,8 @@ export const About = () => {
 					assurance.
 				</p>
 				{/* references */}
-				<p className='text-white font-OpenSans text-xl text-clip  '>
-					<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
+				<p className='text-text-clr font-OpenSans text-xl text-clip  '>
+					<h1 className='pb-2 font-Questrial text-4xl text-accent-3 '>
 						REFERENCES
 					</h1>
 					[1] Marco L, E. Tacchini, S. Moret, G. Ballarin, “Automatic
