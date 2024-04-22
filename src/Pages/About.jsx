@@ -4,7 +4,7 @@ export const About = () => {
 	return (
 		<>
 			<Navbar />
-			<div className='p-10 font-PlayfairDisplay text-4xl text-accent-1 pb-10 sticky  top-0 bg-background text-center'>
+			<div className='p-10 font-PlayfairDisplay text-4xl text-accent-1 pb-10 sticky  top-0  text-center'>
 				Research Paper
 			</div>
 
@@ -13,7 +13,7 @@ export const About = () => {
 				<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
 					INTRODUCTION
 				</h1>
-				<p className='text-white font-OpenSans text-xl text-clip  mb-10  '>
+				<p className='text-text-clr font-OpenSans text-xl text-clip  mb-10  '>
 					The news information can be easily accessed through Internet and
 					social media. It is convenient for user to follow their interest
 					events available in online mode. Mass-media playing a huge role
@@ -42,7 +42,7 @@ export const About = () => {
 				<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
 					PROPOSED SOLUTION
 				</h1>
-				<p className='text-white font-OpenSans text-xl text-clip mb-10 '>
+				<p className='text-text-clr font-OpenSans text-xl text-clip mb-10 '>
 					The proposed system uses naïve Bayes algorithm for detecting the
 					fake news, it has a higher accuracy level. The data is divided
 					here into two parts (test and train). The train data is trained
@@ -65,7 +65,7 @@ export const About = () => {
 				<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
 					SYSTEM ARCHITECTURE
 				</h1>
-				<p className='text-white font-OpenSans text-xl text-clip mb-10  '>
+				<p className='text-text-clr font-OpenSans text-xl text-clip mb-10  '>
 					The first step in the detection of fake news is extracting the
 					training data either by downloading it from a file or from
 					online. There are two methods to count the words. The Fit method
@@ -96,7 +96,7 @@ export const About = () => {
 				<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
 					CONCLUSION
 				</h1>
-				<p className='text-white font-OpenSans text-xl text-clip mb-10 '>
+				<p className='text-text-clr font-OpenSans text-xl text-clip mb-10 '>
 					By leveraging the Naïve Bayes theorem, we unlock a powerful
 					mechanism to swiftly classify news articles as either authentic
 					or fabricated, regardless of dataset size. This methodology
@@ -122,7 +122,7 @@ export const About = () => {
 				<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
 					REFERENCES
 				</h1>
-				<p className='text-white font-OpenSans text-xl text-clip  '>
+				<p className='text-text-clr font-OpenSans text-xl text-clip  '>
 					[1] Marco L, E. Tacchini, S. Moret, G. Ballarin, “Automatic
 					Online Fake News Detection Combining Content and Social Signals,”
 					[Online]. Available:

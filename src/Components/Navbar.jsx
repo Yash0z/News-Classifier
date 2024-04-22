@@ -16,6 +16,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { FaGithub } from "react-icons/fa6";
 library.add(
    faClockRotateLeft,
 	faEnvelope,
@@ -63,13 +64,13 @@ export const Navbar = () => {
                <NavLink
 						to='/history'
 						className={(e) => {
-							return e.isActive ? "transition-colors text-sky " : "";
+							return e.isActive ? "text-active " : "";
 						}}
 					>
-						<li className='hidden md:block cursor-pointer'>
+						<li className='hidden md:block cursor-pointer text-xl'>
 							<FontAwesomeIcon
 								icon={faClockRotateLeft}
-								className='size-4 pr-1.5'
+								className='size-5 pr-1.5'
 							/>
 							History
 						</li> 
@@ -88,15 +89,21 @@ export const Navbar = () => {
 							Research
 						</li>
 					</NavLink>
-					<NavLink to='/login'>
+               <NavLink
+						to='https://github.com/YashAmberkar05/News-Classifier'
+						className={(e) => {
+							return e.isActive ? "text-active" : "";
+						}}
+					>
 						<li className='hidden md:block cursor-pointer text-xl'>
 							<FontAwesomeIcon
-								icon={faArrowRightToBracket}
-								className='size-5 pr-1.5'
+								icon={faGithub}
+								className='size-5 pr-1'
 							/>
-							Login
+							Github
 						</li>
 					</NavLink>
+					
                <Switch/>
 				</ul>
 			</div>

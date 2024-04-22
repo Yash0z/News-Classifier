@@ -39,10 +39,10 @@ export const Search = () => {
 			{/* Text Section */}
 			<div className='flex justify-center relative top-[10vh]'>
 				<ul className='flex flex-col items-center space-x-4 md:flex-row '>
-					<li className='font-PlayfairDisplay text-silver text-4xl font-bold sm:text-5xl  '>
+					<li className='font-PlayfairDisplay text-accent-2 text-4xl font-bold sm:text-5xl  '>
 						Navigate the Noise,
 					</li>
-					<li className='font-PlayfairDisplay text-cerulean text-4xl font-bold sm:text-5xl '>
+					<li className='font-PlayfairDisplay text-accent-1 text-4xl font-bold sm:text-5xl '>
 						Find the Facts.
 					</li>
 				</ul>
@@ -58,7 +58,7 @@ export const Search = () => {
 					<label className='flex flex-row justify-between '>
 						<input
 							required
-							className='w-[80vw]  relative  min-h-[5rem] rounded-lg text-white pl-5 bg-black cursor-text outline-none border-2 duration-200 peer focus: border-gray-500 focus:border-lavender overflow-hidden  md:w-[60vw] '
+							className='w-[80vw] text-lg relative  min-h-16 rounded-lg text-text-clr pl-5 bg-background cursor-text outline-none border-2 duration-200 peer focus: border-gray-500 focus:border-accent-1 overflow-hidden  md:w-[60vw] '
 							type='text'
 							value={inputText}
 							onChange={(e) => {
@@ -72,11 +72,11 @@ export const Search = () => {
 							}}
 						/>
 						<span
-							className='text-sm text-gray-500 absolute  top-6 ml-6 peer-focus:text-accent-1  pointer-events-none 
+							className='text-xl text-gray-500 absolute px-2 top-4 ml-6 peer-focus:text-accent-1  pointer-events-none 
                      duration-300  bg-background
-                     peer-focus:-translate-y-8 peer-focus:text-sm  
-                     peer-valid:-translate-y-8 peer-valid:text-sm  
-                     md:text-lg md:top-5 md:peer-focus:-translate-y-7 md:peer-valid:-translate-y-7 md:peer-focus:text-md md:peer-valid:text-md '
+                     peer-focus:-translate-y-8 peer-focus:text-lg  
+                     peer-valid:-translate-y-8 peer-valid:text-lg  
+                      md:peer-focus:-translate-y-8 md:peer-valid:-translate-y-8 md:peer-focus:text-lg md:peer-valid:text-lg '
 						>
 							Enter your content
 						</span>
@@ -120,10 +120,10 @@ export const Search = () => {
 				</div>
 			</section>
         <div className="hidden md:block">
-         <NavLink to='/contact'className="text-sky font-raleway text-lg absolute  bottom-4 right-8 hover:text-blue-500 hover:underline" > 
+         <NavLink to='/contact'className="text-text-clr font-raleway text-lg absolute  bottom-4 right-8 hover:text-blue-500 hover:underline" > 
               Contact
             </NavLink>
-            <NavLink to='/terms&Conditions'className="text-sky font-raleway text-lg absolute  bottom-4 right-28  hover:text-blue-500 hover:underline" > 
+            <NavLink to='/terms&Conditions'className="text-text-clr font-raleway text-lg absolute  bottom-4 right-28  hover:text-blue-500 hover:underline" > 
               Terms And Conditions
             </NavLink>
             </div>
