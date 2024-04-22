@@ -4,7 +4,7 @@ export const About = () => {
 	return (
 		<>
 			<Navbar />
-			<div className='p-10 font-PlayfairDisplay text-4xl text-sky pb-10 sticky  top-0 bg-black text-center'>
+			<div className='p-10 font-PlayfairDisplay text-4xl text-accent-1 pb-10 sticky  top-0 bg-background text-center'>
 				Research Paper
 			</div>
 

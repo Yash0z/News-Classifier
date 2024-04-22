@@ -72,18 +72,18 @@ export const Search = () => {
 							}}
 						/>
 						<span
-							className='text-xl text-gray-400 absolute px-2  top-6 ml-6 peer-focus:text-lavender  pointer-events-none 
-                     duration-300  bg-black 
-                     peer-focus:-translate-y-9 peer-focus:text-xl  
-                     peer-valid:-translate-y-9 peer-valid:text-xl 
-                     sm:text-2xl md:top-5 md:peer-focus:-translate-y-8 md:peer-valid:-translate-y-8 md:peer-focus:text-md md:peer-valid:text-md '
+							className='text-sm text-gray-500 absolute  top-6 ml-6 peer-focus:text-accent-1  pointer-events-none 
+                     duration-300  bg-background
+                     peer-focus:-translate-y-8 peer-focus:text-sm  
+                     peer-valid:-translate-y-8 peer-valid:text-sm  
+                     md:text-lg md:top-5 md:peer-focus:-translate-y-7 md:peer-valid:-translate-y-7 md:peer-focus:text-md md:peer-valid:text-md '
 						>
 							Enter your content
 						</span>
 					</label> 
 					<button
 						type='submit'
-						className='text-center font-Poppins text-xl p-2 w-40 h-12  bg-red rounded-lg border-2 border-black hover:bg-opacity-70  duration-500'
+						className='text-center font-Poppins text-xl p-2 w-40 h-12  bg-accent-3 rounded-lg border-2 border-primary hover:bg-opacity-70  duration-500'
 						disabled={!inputText.trim()}
 					>
 						{" "}
@@ -102,16 +102,16 @@ export const Search = () => {
 				{/* progressbar */}
 				<div
 					className={`fixed w-[80vw] max-w-screen-md h-6 rounded-xl ${
-						filled > 0 ? "border-2 border-lavender" : ""
+						filled > 0 ? "border-2 border-accent-1" : ""
 					}`}
 				>
 					<div
-						className='rounded-xl h-full transition-width duration-700 ease-in-out bg-sky'
+						className='rounded-xl h-full transition-width duration-700 ease-in-out bg-filled'
 						style={{ width: `${filled}%` }}
 					></div>
 				</div>
 				{/* result */}
-				<div className='text-white font-Questrial text-2xl '>
+				<div className='text-text-clr font-Questrial  text-3xl '>
 					{result !== null && probability !== null && (
 						<h3>
 							{result}: {probability.toFixed(2)}%
