@@ -38,7 +38,7 @@ export const Search = () => {
 			{/* Text Section */}
 			<div className='flex justify-center relative top-[10vh]'>
 				<ul className='flex flex-col items-center space-x-4 md:flex-row '>
-					<li className='font-PlayfairDisplay text-accent-3 text-3xl font-bold sm:text-4xl md:text-5xl '>
+					<li className='font-PlayfairDisplay text-accent-2 text-3xl font-bold sm:text-4xl md:text-5xl '>
 						Navigate the Noise,
 					</li>
 					<li className='font-PlayfairDisplay text-accent-1 text-3xl font-bold sm:text-4xl md:text-5xl'>

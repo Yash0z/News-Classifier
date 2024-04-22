@@ -3,7 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 body {
-     background-color: rgba(var(--background))
+     background-color: rgba(var(--background));
+     @apply transition-colors duration-500
 }
 
 /* default scrollbar  */
@@ -32,7 +33,7 @@ body {
    --primary: 247, 239, 229;
    --secondary: 195, 172, 208;
    --accent-1: 119, 67, 219;
-   --accent-2: 246, 255, 166;
+   --accent-2: 170, 122, 183;
    --accent-3: 63, 114, 175;
    --active: 79, 69, 87 ;
    --text-clr:0, 0, 0;
@@ -40,13 +41,13 @@ body {
  }
 
  .dark {
-   --background: 34, 40, 49;
-   --primary: 49, 54, 63;
-   --secondary: 238, 238, 238;
-   --accent-1: 118, 171, 174;
-   --accent-2: 221, 87, 70;
-   --accent-3: 219, 226, 239;
-   --active: 151, 231, 225;
+   --background: 0, 0, 0;
+   --primary: 25, 24, 37;
+   --secondary: 6, 70, 99;
+   --accent-1: 134, 93, 255;
+   --accent-2: 238, 226, 222;
+   --accent-3: 238, 66, 102;
+   --active: 166, 208, 221;
    --text-clr:246, 245, 242;
-   --filled:197, 235, 170;
+   --filled:181, 192, 208;
 }
