@@ -1,9 +1,68 @@
-import React from 'react'
-
+import React from "react";
+import { Navbar } from "../Components/Navbar";
 export const TC = () => {
-  return (
-    <div>TC</div>
-  )
-}
+	return (
+		<>
+			<Navbar />
+			<div className='p-10 font-OpenSans font-bold text-4xl text-accent-1 pb-10 sticky  top-0  text-center'>
+				Terms of Service
+			</div>
 
-export default TC
+			<div className=' relative p-5 border-white h-[78vh]  w-[60%]  mx-auto text-accent-3  transition-overflow '>
+				<span className='text-2xl text-text-clr font-Questrial'>
+					These Terms and Conditions govern your relationship with the News
+					Classifier service operated by me. Please read these Terms and
+					Conditions carefully before using our Service.
+				</span>
+				<h1 className=' font-Questrial text-2xl mt-1 '>
+					1. Acceptance of Terms
+				</h1>
+				<p className='text-text-clr font-OpenSans text-xl text-clip pb-4 '>
+					By accessing or using the Service, you agree to be bound by these
+					Terms. If you disagree with any part of the terms, then you may
+					not access the Service. Your use of the Service constitutes your
+					acceptance of these Terms and your agreement to comply with them.
+				</p>
+				<h1 className=' font-Questrial text-2xl '>
+					2. Description of Service
+				</h1>
+				<p className='text-text-clr font-OpenSans text-xl text-clip pb-4'>
+					The News Classifier service is designed to categorize news
+					articles into "true" or "false" categories based on their
+					content. This classification is determined using algorithms and
+					natural language processing techniques.
+				</p>
+				<h1 className=' font-Questrial text-2xl  '>
+					3. Accuracy of Classification
+				</h1>
+				<p className='text-text-clr font-OpenSans text-xl text-clip pb-4'>
+					While we strive to provide accurate classifications, we cannot
+					guarantee the accuracy, reliability, or completeness of the
+					classifications made by the Service. The classification results
+					are based on automated analysis and may not always reflect the
+					true nature of the news articles.
+				</p>
+				<h1 className=' font-Questrial text-2xl'>
+					4. User Responsibilities
+				</h1> 
+				<p className='text-text-clr font-OpenSans text-xl text-clip pb-4'>
+					You agree to use the Service responsibly and not to misuse it in
+					any way that could harm its functionality or interfere with the
+					experience of other users. You are solely responsible for any
+					consequences resulting from your use of the Service.
+				</p>
+				<h1 className=' font-Questrial text-2xl'>
+					5.Contact Us
+				</h1>
+				<p className='text-text-clr font-OpenSans text-xl text-clip pb-4'>
+					If you have any questions about these Terms, please contact us.
+					By using the Service, you agree to abide by these Terms and
+					Conditions. If you do not agree with any part of these Terms,
+					please do not use the Service.
+				</p>
+			</div>
+		</>
+	);
+};
+
+export default TC;
