@@ -1,5 +1,5 @@
-from flask import Flask, jsonify, request
-from flask_cors import CORS
+from flask import Flask, jsonify, request # type: ignore
+from flask_cors import CORS # type: ignore
 import pickle
 
 app = Flask(__name__)
@@ -21,7 +21,7 @@ def predict():
     input_text = data['text']
     prediction, probability = predict_news(input_text)
     
-    if prediction == 0:
+    if prediction == 1:
         result = "Unreliable"
     else:
         result = "Reliable"
