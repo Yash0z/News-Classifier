@@ -8,7 +8,7 @@ export const TC = () => {
 				Terms of Service
 			</div>
 
-			<div className=' relative p-5 border-white h-[78vh]  w-[60%]  mx-auto text-accent-3  transition-overflow '>
+			<div className='w-[90%] overflow-y-scroll relative p-4 border-white h-[78vh]  mx-auto text-accent-3  sm:w-[60%] sm:overflow-hidden '>
 				<span className='text-2xl text-text-clr font-Questrial'>
 					These Terms and Conditions govern your relationship with the News
 					Classifier service operated by me. Please read these Terms and
