@@ -57,35 +57,29 @@ export default function Sidebar() {
 
 	const list = (anchor) => (
 		<Box
-			className='bg-black h-screen text-lavender '
+			className='bg-background h-screen text-accent-3  '
 			sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
 			role='presentation'
 			onClick={toggleDrawer(anchor, false)}
 			onKeyDown={toggleDrawer(anchor, false)}
 		>
 			<List>
-				<li className='p-5 text-3xl font-Montserrat font-bold text-lavender'>
+				<li className='p-5 text-3xl font-Montserrat font-bold text-accent-1'>
 					VerifEye
 				</li> 
 				{[
 					{ text: "Home", link: "/", icon: faHouse },
-					{ text: "Login", link: "/Login", icon: faArrowRightToBracket },
 					{ text: "Research", link: "/About", icon: faBook },
 					{ text: "History", link: "/history", icon: faClockRotateLeft },
 					{ text: "Contact", link: "/Contact", icon: faEnvelope },
-					{ text: "Privacy", link: "/privacy", icon: faFileLines },
-					{
-						text: "Terms & Conditions",
-						link: "/terms",
-						icon: faNewspaper,
-					},
+					{text: "Terms & Conditions",link: "/terms",icon: faNewspaper},
 				].map((item, index) => (
 					<ListItem key={index} disablePadding>
 						<ListItemButton component={NavLink} to={item.link}>
 							<ListItemIcon sx={{ mr: -3 }}>
 								<FontAwesomeIcon
 									icon={item.icon}
-									style={{ color: "#C0D6E8" }}
+									style={{ color: "rgba(var(--accent-2))" }}
 								/>
 							</ListItemIcon>
 							<ListItemText primary={item.text} />
