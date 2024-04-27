@@ -64,15 +64,30 @@ export default function Sidebar() {
 			onKeyDown={toggleDrawer(anchor, false)}
 		>
 			<List>
-				<li className='p-5 text-3xl font-Montserrat font-bold text-accent-1'>
-					VerifEye
-				</li> 
+				<div className='flex justify-between'>
+					<li className='p-5 text-3xl font-Montserrat font-bold text-accent-1'>
+						VerifEye
+					</li>
+					<button
+						onClick={toggleDrawer("left", false)}
+						className='text-text-clr mr-6'
+					>
+						<FontAwesomeIcon
+							icon={faAnglesLeft}
+							className='  size-5 md:hidden '
+						/>
+					</button>
+				</div>
 				{[
 					{ text: "Home", link: "/", icon: faHouse },
 					{ text: "Research", link: "/About", icon: faBook },
 					{ text: "History", link: "/history", icon: faClockRotateLeft },
 					{ text: "Contact", link: "/Contact", icon: faEnvelope },
-					{text: "Terms & Conditions",link: "/terms",icon: faNewspaper},
+					{
+						text: "Terms & Conditions",
+						link: "/terms&conditions",
+						icon: faNewspaper,
+					},
 				].map((item, index) => (
 					<ListItem key={index} disablePadding>
 						<ListItemButton component={NavLink} to={item.link}>
@@ -90,7 +105,6 @@ export default function Sidebar() {
 		</Box>
 	);
 
-
 	return (
 		<div>
 			<button onClick={toggleDrawer("left", true)}>
@@ -99,6 +113,7 @@ export default function Sidebar() {
 					className='  size-5 md:hidden '
 				/>
 			</button>
+
 			<SwipeableDrawer
 				anchor='left'
 				open={state["left"]}
