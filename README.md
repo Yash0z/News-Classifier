@@ -4,17 +4,17 @@
 
 <h2>📸Project Screenshots:</h2>
 
-<img src="./src/Images/Screenshot 2024-04-14 203625.png" alt="project-screenshot" width="1000" height="500/">
+<img src="./src/Images/sample.png" alt="project-screenshot" width="1050" height="500/">
 
   
   
 <h2>💻Built with-</h2>
 
 
-*  ### Javascript
-*  ### React
-*  ### Python
-*  ### Flask
+*  #### Javascript
+*  #### React
+*  #### Python
+*  #### Flask
 
 
 <h2>📫Contact-</h2>
