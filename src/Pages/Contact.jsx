@@ -1,40 +1,36 @@
 import React from "react";
 import { Navbar } from "../Components/Navbar";
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 
 export const Contact = () => {
 	return (
 		<>
 			<Navbar />
-			<div className=' flex  justify-center items-center relative w h-[40vh] text-4xl sm:text-5xl border '>
-				<div className=' text-sky font-Montserrat font-bold bottom-16 relative'>
-					What Can We Help you with?
-				</div>
-				<div className='flex  absolute bottom-28 w-[60%] h-[15%] justify-between'>
-					<form action=''>
-						<textarea
-							name=''
-							id=''
-							cols='30'
-							rows='1'
-							className='w-[88%] text-xl absolute h-[6vh]  rounded-xl text-white p-5 bg-black cursor-text outline-none resize-none border-2 duration-200 peer focus: border-gray-500 focus:border-lavender     '
-						></textarea>
-					</form>
-					<button className='w-[10%] rounded-xl text-2xl bg-sky'>Send</button>
-				</div>
+			<div className='flex flex-col text-center p-5 space-y-5 w-[80vw] mx-auto border-2 h-[70vh] border-red-600 relative top-28 sm:w-[50vw]'>
+         <h2 className="text-3xl font-Raleway">Contact Us</h2>
+         <TextField
+          required
+          id="filled-required"
+          label="Name"
+          variant="filled"
+        />
+        <TextField
+          required
+          id="filled-required"
+          label="Email"
+          variant="filled"
+        />
+        <TextField
+          className="h-28"
+          id="filled-multiline-flexible"
+          label="Description"
+          multiline
+          maxRows={8}
+          variant="filled"
+        />
+           <button className="self-center bg-accent-1 text-text-clr w-20 h-10 rounded-lg">Send</button>
 			</div>
-
-			{/* Quick Access
-      <section className='border absolute bottom-0 w-full h-[50vh]'>
-         <span className='text-white font-Poppins text-2xl p-4'>Contact Us</span>
-       
-        
- 
-
-
-
-
-
-      </section> */}
 		</>
 	);
 };
