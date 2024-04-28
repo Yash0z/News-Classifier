@@ -27,6 +27,3 @@ def predict():
         result = "Reliable"
     
     return jsonify({'prediction': result, 'probability': probability})
-
-if __name__ == '__main__':
-    app.run(debug=True)
