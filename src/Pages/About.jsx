@@ -8,7 +8,7 @@ export const About = () => {
 				Research Paper
 			</div>
 
-			<div className=' relative p-5 border-white h-[78vh]  w-[80%]  mx-auto  overflow-hidden hover:overflow-y-scroll transition-overflow '>
+			<div className=' relative p-5 border-white h-[78vh]  w-[80%]  mx-auto  overflow-hidden overflow-y-scroll transition-overflow '>
 				{/* Problem */}
 				<h1 className='pb-2 font-Questrial text-4xl text-lavender '>
 					INTRODUCTION
